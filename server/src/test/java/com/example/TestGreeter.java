@@ -24,6 +24,40 @@ public class TestGreeter {
     assertThat(greeter.greet(someone), containsString(someone));
   }
 
+ @Before
+  public void setup() {
+    greeter = new Greeter();
+  }
+
+  @Test
+  public void greetShouldIncludeTheOneBeingGreeted() {
+    String someone = "World";
+
+    assertThat(greeter.greet(someone), containsString(someone));
+  }
+   @Before
+  public void setup() {
+    greeter = new Greeter();
+  }
+
+  @Test
+  public void greetShouldIncludeTheOneBeingGreeted() {
+    String someone = "World";
+
+    assertThat(greeter.greet(someone), containsString(someone));
+  }
+
+   @Before
+  public void setup() {
+    greeter = new Greeter();
+  }
+
+  @Test
+  public void greetShouldIncludeTheOneBeingGreeted() {
+    String someone = "World";
+
+    assertThat(greeter.greet(someone), containsString(someone));
+  }
   @Test
   public void greetShouldIncludeGreetingPhrase() {
     String someone = "World";
